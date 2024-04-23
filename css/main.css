@@ -1,21 +1,21 @@
 /* @font-face {
     font-family: 'Raleway';
-    src: url('/asset/fonts/Raleway-Medium.ttf');
+    src: url('//fonts/Raleway-Medium.ttf');
   } */
   @font-face {
     font-family: 'Open Sans light';
-    src: url('/asset/fonts/OpenSans-Light.ttf');
+    src: url('/fonts/OpenSans-Light.ttf');
 }
 
 
 @font-face {
     font-family: 'Open Sans Regular';
-    src: url('/asset/fonts/OpenSans-Regular.ttf');
+    src: url('/fonts/OpenSans-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Open Sans semibold';
-    src: url('/asset/fonts/OpenSans-SemiBold.ttf');
+    src: url('/fonts/OpenSans-SemiBold.ttf');
 }
 
 
@@ -23,13 +23,13 @@
 
 @font-face {
     font-family: 'Inter Medium';
-    src: url('/asset/fonts/Inter-Medium.ttf');
+    src: url('/fonts/Inter-Medium.ttf');
     font-weight: medium;
 }
 
 @font-face {
     font-family: 'Inter Bold';
-    src: url('/asset/fonts/Inter-Bold.ttf');
+    src: url('/fonts/Inter-Bold.ttf');
     font-weight: bold;
 }
 
