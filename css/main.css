@@ -19,7 +19,11 @@
 }
 
 
-
+@font-face {
+    font-family: 'Inter light';
+    src: url('/fonts/Inter-Ligth.ttf');
+    font-weight: lighter;
+}
 
 @font-face {
     font-family: 'Inter Medium';
@@ -38,7 +42,7 @@
 
 
 :root {
-    --primary-color: #688392;
+    --primary-color:rgba(128, 128, 128, 0.7);
     --primary-text: rgba(0, 0, 0, 0.7);
     --secondary-text: rgba(128, 128, 128, 0.7);
 }
@@ -49,17 +53,18 @@ body {
 }
 
 h1 {
-    font-size: 40px;
+
+    font-size: 28px;
+    color: var(--secondary-text);
 }
 
 h2 {
-    font-size: 22px;
-    color: var(--secondary-text);
+    font-size: 40px;
 }
 
 h3 {
     font-size: 24px;
-    font-family: 'Inter Medium';
+    font-family: 'Inter medium';
 }
 
 /* h4 {
@@ -75,15 +80,19 @@ h3 {
 }
 
 .subtitle-one {
-    font-family: 'Open Sans regular';
+    font-family: 'Open Sans semibold';
     color: var(--secondary-text);
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .experience-name{
-    font-family:'Inter Bold' ;
-    font-weight: bold;
-    font-size: 16px;
+    font-family:'Inter medium' ;
+    font-size: 20px;
+}
+
+.container-custom{
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 @media (min-width: 992px){
