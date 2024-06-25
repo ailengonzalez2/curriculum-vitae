@@ -20,19 +20,25 @@
 
 
 @font-face {
-    font-family: 'Inter light';
-    src: url('/fonts/Inter-Ligth.ttf');
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Light.ttf');
     font-weight: lighter;
 }
 
 @font-face {
-    font-family: 'Inter Medium';
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
     src: url('/fonts/Inter-Medium.ttf');
     font-weight: medium;
 }
 
 @font-face {
-    font-family: 'Inter Bold';
+    font-family: 'Inter';
     src: url('/fonts/Inter-Bold.ttf');
     font-weight: bold;
 }
@@ -56,15 +62,19 @@ h1 {
 
     font-size: 28px;
     color: var(--secondary-text);
+    /* font-family: 'Open Sans regular'; */
 }
 
 h2 {
     font-size: 40px;
+    font-family: Open Sans Regular;
+    font-weight: 500;
 }
 
 h3 {
     font-size: 24px;
-    font-family: 'Inter medium';
+    font-family: 'Inter';
+    font-weight: 400;
 }
 
 /* h4 {
@@ -80,13 +90,20 @@ h3 {
 }
 
 .subtitle-one {
-    font-family: 'Open Sans semibold';
+    font-family: 'Open Sans regular';
     color: var(--secondary-text);
     font-size: 16px;
 }
 
+.skill-detail{
+    font-family:'Inter' ;
+    font-weight: 300;
+    font-size: 18px;
+}
+
 .experience-name{
-    font-family:'Inter medium' ;
+    font-family:'Inter' ;
+    font-weight: 300;
     font-size: 20px;
 }
 
