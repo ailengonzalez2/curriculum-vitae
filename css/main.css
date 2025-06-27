@@ -112,6 +112,10 @@ h3 {
     margin: 0 auto;
 }
 
+.skill-category{
+        font-family: open sans semibold;
+}
+
 @media (min-width: 992px){
    .margin-desktop{
     margin: 60px 250px;
