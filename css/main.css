@@ -116,6 +116,36 @@ h3 {
         font-family: open sans semibold;
 }
 
+.btn-download-cv {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 20px;
+    border: 1.5px solid #000;
+    border-radius: 6px;
+    background: #000;
+    color: #fff;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 8px;
+}
+
+.btn-download-cv:hover {
+    background: #333;
+    border-color: #333;
+    color: #fff;
+}
+
+@media print {
+    .btn-download-cv {
+        display: none;
+    }
+}
+
 @media (min-width: 992px){
    .margin-desktop{
     margin: 60px 250px;
