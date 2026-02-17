@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 
 <head>
     <meta charset="UTF-8">
@@ -26,17 +26,45 @@
 
 <body>
 
+    <nav class="sidebar" id="sidebar">
+        <a href="./Ailen Gonzalez-CV.pdf" download onclick="return confirm('Download CV as PDF?')"
+            class="sidebar-download">
+            <i class="bi bi-download"></i><span>Download CV</span>
+        </a>
+        <div class="sidebar-nav">
+            <a href="#profile" class="sidebar-link active">
+                <i class="bi bi-person"></i><span>Profile</span>
+            </a>
+            <a href="#experience" class="sidebar-link">
+                <i class="bi bi-briefcase"></i><span>Experience</span>
+            </a>
+            <a href="#skills" class="sidebar-link">
+                <i class="bi bi-tools"></i><span>Skills</span>
+            </a>
+            <a href="#education" class="sidebar-link">
+                <i class="bi bi-mortarboard"></i><span>Education</span>
+            </a>
+            <a href="#certifications" class="sidebar-link">
+                <i class="bi bi-award"></i><span>Certifications</span>
+            </a>
+            <a href="#projects" class="sidebar-link">
+                <i class="bi bi-folder"></i><span>Projects</span>
+            </a>
+            <a href="#contact" class="sidebar-link">
+                <i class="bi bi-envelope"></i><span>Contact</span>
+            </a>
+        </div>
+    </nav>
+
+    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+    </button>
+
     <main class="margin-desktop mt-5">
 
         <!-- Header & Summary -->
-        <section class="container container-custom mb-5">
-            <div class="d-flex justify-content-between align-items-start">
-                <h1>Ailen Gonzalez</h1>
-                <a href="./Ailen Gonzalez-CV.pdf" download onclick="return confirm('Download CV as PDF?')"
-                    class="btn-download-cv text-decoration-none">
-                    <i class="bi bi-download pe-2"></i>Download CV
-                </a>
-            </div>
+        <section id="profile" class="container container-custom mb-5">
+            <h1>Ailen Gonzalez</h1>
             <p class="subtitle-role mb-4">Frontend Developer | Product Designer</p>
           
             <p class="contact-link pb-4"><i class="bi bi-geo pe-2"></i>Cordoba, Argentina | GMT-3</p>
@@ -74,7 +102,7 @@
         </section>
 
         <!-- Work Experience -->
-        <section class="container container-custom">
+        <section id="experience" class="container container-custom">
             <div>
                 <h2>Work experience</h2>
                 <hr class="color-secondary mt-1 mb-4">
@@ -162,7 +190,7 @@
         </section>
 
         <!-- Skills -->
-        <section class="container container-custom mb-5">
+        <section id="skills" class="container container-custom mb-5">
             <div>
                 <h2>Skills</h2>
                 <hr class="color-secondary mt-1 mb-4">
@@ -228,7 +256,7 @@
         </section>
 
         <!-- Education -->
-        <section class="container container-custom">
+        <section id="education" class="container container-custom">
             <div class="my-5">
                 <h2>Education</h2>
                 <hr class="color-secondary mt-1 mb-4">
@@ -257,7 +285,7 @@
         </section>
 
         <!-- Certifications -->
-        <section class="container container-custom">
+        <section id="certifications" class="container container-custom">
             <div class="my-5">
                 <h2>Certifications</h2>
                 <hr class="color-secondary mt-1 mb-4">
@@ -290,7 +318,7 @@
         </section>
 
         <!-- Featured Projects -->
-        <section class="container container-custom mb-5">
+        <section id="projects" class="container container-custom mb-5">
             <h2>Featured projects</h2>
             <hr class="color-secondary mt-1 mb-4">
 
@@ -348,7 +376,7 @@
 
     </main>
 
-    <footer class="margin-desktop">
+    <footer id="contact" class="margin-desktop">
         <div class="container container-custom">
             <hr>
             <div class="d-md-flex justify-content-between">
@@ -371,6 +399,36 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+    <script>
+        (function () {
+            const sidebar = document.getElementById('sidebar');
+            const toggle = document.getElementById('sidebarToggle');
+            const links = document.querySelectorAll('.sidebar-link');
+            const sections = document.querySelectorAll('section[id], footer[id]');
+
+            toggle.addEventListener('click', function () {
+                sidebar.classList.toggle('sidebar-open');
+            });
+
+            links.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    sidebar.classList.remove('sidebar-open');
+                });
+            });
+
+            window.addEventListener('scroll', function () {
+                let current = '';
+                sections.forEach(function (section) {
+                    var top = section.offsetTop - 120;
+                    if (window.scrollY >= top) current = section.id;
+                });
+                links.forEach(function (link) {
+                    link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+                });
+            });
+        })();
+    </script>
 </body>
 
 </html>
