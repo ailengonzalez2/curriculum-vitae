@@ -264,6 +264,85 @@ h4 {
     background: rgba(0, 0, 0, 0.04);
 }
 
+/* Project Cards */
+.project-card {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.project-card:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.project-year {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--secondary-text);
+    letter-spacing: 0.5px;
+}
+
+.project-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 2px;
+    margin-bottom: 6px;
+}
+
+.project-category {
+    font-weight: 300;
+    color: var(--secondary-text);
+    font-size: 16px;
+}
+
+.project-description {
+    margin-bottom: 10px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.project-tag {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 2px 10px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.04);
+    color: var(--primary-text);
+}
+
+.project-features {
+    margin-bottom: 8px;
+}
+
+.project-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary-text);
+    text-decoration: none;
+    transition: opacity 0.15s ease;
+}
+
+.project-link:hover {
+    opacity: 0.7;
+}
+
+.project-link i {
+    font-size: 12px;
+    margin-left: 2px;
+}
+
 @media print {
     .sidebar,
     .sidebar-toggle {
