@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth;">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -71,15 +71,15 @@
             <div class="d-md-flex justify-content-between">
                 <a target="_blank" href="https://www.linkedin.com/in/ailengonzalez/"
                     class="text-decoration-none color-primary" rel="noopener noreferrer">
-                    <p class="contact-link pb-2"><i class="bi bi-linkedin pe-2"></i>linkedin.com/in/ailengonzalez/</p>
+                    <span class="contact-link pb-2"><i class="bi bi-linkedin pe-2"></i>linkedin.com/in/ailengonzalez/</span>
                 </a>
                 <a target="_blank" href="https://ailengonzalez.ar/" class="text-decoration-none color-primary"
                     rel="noopener noreferrer">
-                    <p class="contact-link pb-2"><i class="bi bi-globe pe-2"></i>ailengonzalez.ar</p>
+                    <span class="contact-link pb-2"><i class="bi bi-globe pe-2"></i>ailengonzalez.ar</span>
                 </a>
                 <a target="_blank" href="https://github.com/ailengonzalez2" class="text-decoration-none color-primary"
                     rel="noopener noreferrer">
-                    <p class="contact-link pb-4"><i class="bi bi-github pe-2"></i>github.com/ailengonzalez2</p>
+                    <span class="contact-link pb-4"><i class="bi bi-github pe-2"></i>github.com/ailengonzalez2</span>
                 </a>
             </div>
 
@@ -107,13 +107,10 @@
                 <h2>Work experience</h2>
                 <hr class="color-secondary mt-1 mb-4">
 
-                <div class="mb-4">
-                    <div class="d-flex flex-wrap align-items-center mb-2">
-                        <h3 class="experience-name mb-2 pe-2">Product Designer </h3>
-                        <span class="subtitle-one pe-2">| codeCave</span>
-                        <span class="subtitle-one pe-2">Cordoba, Argentina |</span>
-                        <span class="subtitle-one pe-2">Sep 2025 - Present (REMOTE)</span>
-                    </div>
+                <div class="experience-card">
+                    <span class="experience-date">Sep 2025 - Present</span>
+                    <h3 class="experience-role">Product Designer</h3>
+                    <p class="experience-company">codeCave <span class="experience-location">Cordoba, Argentina (Remote)</span></p>
                     <ul>
                         <li>Lead design and development for company's core products, delivering high-fidelity Figma
                             designs and production-ready code (Vue.js, Nuxt.js, TailwindCSS, WordPress).
@@ -127,13 +124,10 @@
                     </ul>
                 </div>
 
-                <div class="mb-4">
-                    <div class="d-flex flex-wrap align-items-center mb-2">
-                        <h3 class="experience-name mb-2 pe-2">UI Developer </h3>
-                        <span class="subtitle-one pe-2">| Freelance | </span>
-                        <span class="subtitle-one pe-2">Cordoba, Argentina | </span>
-                        <span class="subtitle-one pe-2">Aug 2024 - Present (REMOTE)</span>
-                    </div>
+                <div class="experience-card">
+                    <span class="experience-date">Aug 2024 - Present</span>
+                    <h3 class="experience-role">UI Developer</h3>
+                    <p class="experience-company">Freelance <span class="experience-location">Cordoba, Argentina (Remote)</span></p>
                     <ul>
                         <li>Delivered 20+ end-to-end digital products for startups and independent clients, translating
                             Figma designs into responsive, mobile-first code (Vue.js, Nuxt.js, TailwindCSS), across
@@ -148,13 +142,10 @@
                     </ul>
                 </div>
 
-                <div class="mb-4">
-                    <div class="d-flex flex-wrap align-items-center mb-2">
-                        <h3 class="experience-name mb-2 pe-2">Web Designer</h3>
-                        <span class="subtitle-one pe-2">| Loymark S.A. | </span>
-                        <span class="subtitle-one pe-2">Costa Rica | </span>
-                        <span class="subtitle-one pe-2">Sep 2022 - Jul 2024 (REMOTE)</span>
-                    </div>
+                <div class="experience-card">
+                    <span class="experience-date">Sep 2022 - Jul 2024</span>
+                    <h3 class="experience-role">Web Designer</h3>
+                    <p class="experience-company">Loymark S.A. <span class="experience-location">Costa Rica (Remote)</span></p>
                     <ul>
                         <li>Designed and developed websites and applications using Figma, HTML, CSS, JavaScript, and
                             Bootstrap, delivering many concurrent projects on average.
@@ -168,13 +159,10 @@
                     </ul>
                 </div>
 
-                <div class="mb-4">
-                    <div class="d-flex flex-wrap align-items-center mb-2">
-                        <h3 class="experience-name mb-2 pe-2">Web Developer</h3>
-                        <span class="subtitle-one pe-2">| CodeCave | </span>
-                        <span class="subtitle-one pe-2">Cordoba, Argentina | </span>
-                        <span class="subtitle-one pe-2">Feb 2021 - Sep 2022 (REMOTE)</span>
-                    </div>
+                <div class="experience-card">
+                    <span class="experience-date">Feb 2021 - Sep 2022</span>
+                    <h3 class="experience-role">Web Developer</h3>
+                    <p class="experience-company">CodeCave <span class="experience-location">Cordoba, Argentina (Remote)</span></p>
                     <ul>
                         <li>Built e-commerce platforms and corporate websites using WordPress, WooCommerce, and
                             Elementor.
@@ -194,60 +182,123 @@
             <div>
                 <h2>Skills</h2>
                 <hr class="color-secondary mt-1 mb-4">
-                <h3 class="skill-detail">Technical Skills:</h3>
+                <h3 class="skill-detail">Technical Skills</h3>
 
-                <h4 class="skill-category">Frontend Development:</h4>
-                <p class="mb-4">HTML5, CSS3, JavaScript (ES6+), TypeScript, Vue.js, Nuxt.js, Git, GitHub, Responsive
-                    Design, Cross-Browser Compatibility, Performance Optimization, Tailwind CSS, Nuxt UI, Bootstrap,
-                    Vuetify.
-                </p>
+                <h4 class="skill-category">Frontend Development</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript (ES6+)</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">Vue.js</span>
+                    <span class="skill-tag">Nuxt.js</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">Responsive Design</span>
+                    <span class="skill-tag">Cross-Browser Compatibility</span>
+                    <span class="skill-tag">Performance Optimization</span>
+                    <span class="skill-tag">Tailwind CSS</span>
+                    <span class="skill-tag">Nuxt UI</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">Vuetify</span>
+                </div>
 
-                <h4 class="skill-category">Design & UX:</h4>
-                <p class="mb-4">Figma, Adobe Creative Suite, Design Systems, Information Architecture, User Flows,
-                    Interaction Design, User Research, Journey Mapping, Wireframing, Prototyping, Mobile-First Design,
-                    Usability Testing, A/B Testing.
-                </p>
+                <h4 class="skill-category">Design & UX</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Adobe Creative Suite</span>
+                    <span class="skill-tag">Design Systems</span>
+                    <span class="skill-tag">Information Architecture</span>
+                    <span class="skill-tag">User Flows</span>
+                    <span class="skill-tag">Interaction Design</span>
+                    <span class="skill-tag">User Research</span>
+                    <span class="skill-tag">Journey Mapping</span>
+                    <span class="skill-tag">Wireframing</span>
+                    <span class="skill-tag">Prototyping</span>
+                    <span class="skill-tag">Mobile-First Design</span>
+                    <span class="skill-tag">Usability Testing</span>
+                    <span class="skill-tag">A/B Testing</span>
+                </div>
 
-                <h4 class="skill-category">Web3:</h4>
-                <p class="mb-4">Wagmi, Viem, Web3Modal, DeFi integrations.
-                </p>
+                <h4 class="skill-category">Web3</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Wagmi</span>
+                    <span class="skill-tag">Viem</span>
+                    <span class="skill-tag">Web3Modal</span>
+                    <span class="skill-tag">DeFi integrations</span>
+                </div>
 
-                <h4 class="skill-category">AI & Automation:</h4>
-                <p class="mb-4">N8N (agents & workflow automations), LLM integrations, OpenAI APIs, UX Pilot, Figma AI
-                    tools.
-                </p>
+                <h4 class="skill-category">AI & Automation</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">N8N</span>
+                    <span class="skill-tag">LLM integrations</span>
+                    <span class="skill-tag">OpenAI APIs</span>
+                    <span class="skill-tag">UX Pilot</span>
+                    <span class="skill-tag">Figma AI tools</span>
+                </div>
 
-                <h4 class="skill-category">Version Control:</h4>
-                <p class="mb-4">Git, GitHub, GitLab, Version Control Systems.
-                </p>
+                <h4 class="skill-category">Version Control</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">GitLab</span>
+                    <span class="skill-tag">Version Control Systems</span>
+                </div>
 
-                <h4 class="skill-category">Testing & QA:</h4>
-                <p class="mb-4">Jest, Cypress, Unit Testing, E2E Testing, Vitest.
-                </p>
+                <h4 class="skill-category">Testing & QA</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Jest</span>
+                    <span class="skill-tag">Cypress</span>
+                    <span class="skill-tag">Unit Testing</span>
+                    <span class="skill-tag">E2E Testing</span>
+                    <span class="skill-tag">Vitest</span>
+                </div>
 
-                <h4 class="skill-category">Build Tools & Bundlers:</h4>
-                <p class="mb-4">Vite, Webpack, NPM, Yarn.
-                </p>
+                <h4 class="skill-category">Build Tools & Bundlers</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Vite</span>
+                    <span class="skill-tag">Webpack</span>
+                    <span class="skill-tag">NPM</span>
+                    <span class="skill-tag">Yarn</span>
+                </div>
 
-                <h4 class="skill-category">API Integration:</h4>
-                <p class="mb-4">REST, GraphQL, API consumption, Axios.
-                </p>
+                <h4 class="skill-category">API Integration</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">REST</span>
+                    <span class="skill-tag">GraphQL</span>
+                    <span class="skill-tag">API consumption</span>
+                    <span class="skill-tag">Axios</span>
+                </div>
 
-                <h4 class="skill-category">CMS & Platforms:</h4>
-                <p class="mb-4">Webflow, WordPress, Elementor, WooCommerce, Sitefinity, Notion,
-                    CMS management, Teams, Jira.
-                </p>
+                <h4 class="skill-category">CMS & Platforms</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Webflow</span>
+                    <span class="skill-tag">WordPress</span>
+                    <span class="skill-tag">Elementor</span>
+                    <span class="skill-tag">WooCommerce</span>
+                    <span class="skill-tag">Sitefinity</span>
+                    <span class="skill-tag">Notion</span>
+                    <span class="skill-tag">CMS management</span>
+                    <span class="skill-tag">Teams</span>
+                    <span class="skill-tag">Jira</span>
+                </div>
 
-                <h4 class="skill-category">Collaboration Tools:</h4>
-                <p class="mb-4">Figma, Jira, Notion, Slack, Microsoft Teams, Agile/Scrum.
-                </p>
+                <h4 class="skill-category">Collaboration Tools</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Jira</span>
+                    <span class="skill-tag">Notion</span>
+                    <span class="skill-tag">Slack</span>
+                    <span class="skill-tag">Microsoft Teams</span>
+                    <span class="skill-tag">Agile/Scrum</span>
+                </div>
 
-                <h3 class="skill-detail">Soft Skills:</h3>
+                <h3 class="skill-detail">Soft Skills</h3>
                 <p class="mb-4">Autonomous work, clear communication, collaborative mindset, adaptability, analytical
                     problem-solving, and attention to detail.
                 </p>
 
-                <h3 class="skill-detail">Languages:</h3>
+                <h3 class="skill-detail">Languages</h3>
                 <p class="mb-4">English: C1 (Advanced - Fluent communication, writing, and presentation skills)
                 </p>
                 <p class="mb-4">Espanol: Native
@@ -261,26 +312,33 @@
                 <h2>Education</h2>
                 <hr class="color-secondary mt-1 mb-4">
 
-                <div class="d-flex align-items-center">
-                    <div class="d-flex align-items-center mb-2">
+                <div class="education-card">
+                    <div class="education-header">
                         <img src="/img/unc.png" alt="Universidad Nacional de Cordoba logo" class="course-img">
-                        <h3 class="education-title mb-0 ps-2">Medical Degree</h3>
+                        <div>
+                            <span class="education-year">2017</span>
+                            <h3 class="education-title">Medical Degree</h3>
+                            <p class="education-institution">Universidad Nacional de Cordoba, Argentina</p>
+                        </div>
                     </div>
-                </div>
-                <div class="justify-content-between mb-2">
-                    <p class="subtitle-one">Universidad Nacional de Cordoba | Cordoba, Argentina | 2017</p>
                     <ul>
                         <li>Practiced emergency medicine (2011-2021)</li>
                         <li>Analytical problem-solving, critical thinking, and performance under pressure</li>
                     </ul>
                 </div>
 
-                <h3 class="education-title">Self-Taught Frontend Developer & Designer</h3>
-                <p class="subtitle-one">2019 - Present</p>
-                <ul>
-                    <li>Completed 1000+ hours of structured online education (Free Code Camp,
-                        Coursera, Vue Mastery, Memorisly)</li>
-                </ul>
+                <div class="education-card">
+                    <div class="education-header">
+                        <div>
+                            <span class="education-year">2019 - Present</span>
+                            <h3 class="education-title">Self-Taught Frontend Developer & Designer</h3>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Completed 1000+ hours of structured online education (Free Code Camp,
+                            Coursera, Vue Mastery, Memorisly)</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -290,29 +348,44 @@
                 <h2>Certifications</h2>
                 <hr class="color-secondary mt-1 mb-4">
 
-                <div class="d-flex align-items-center mb-4">
+                <div class="cert-card">
                     <img src="/img/vue.png" alt="Vue Mastery logo" class="course-img" loading="lazy">
-                    <p class="mb-0 ps-2">Vue Mastery | Vue Mastery | Online | Ongoing</p>
+                    <div>
+                        <p class="cert-name">Vue Mastery</p>
+                        <p class="cert-meta">Vue Mastery <span class="cert-year">Ongoing</span></p>
+                    </div>
                 </div>
 
-                <div class="d-flex align-items-center mb-4">
+                <div class="cert-card">
                     <img src="/img/memorisly.png" alt="Memorisely logo" class="course-img" loading="lazy">
-                    <p class="mb-0 ps-2">AI Prototyping | Memorisely | Online | 2025</p>
+                    <div>
+                        <p class="cert-name">AI Prototyping</p>
+                        <p class="cert-meta">Memorisely <span class="cert-year">2025</span></p>
+                    </div>
                 </div>
 
-                <div class="d-flex align-items-center mb-4">
+                <div class="cert-card">
                     <img src="/img/free-code-camp.png" alt="Free Code Camp logo" class="course-img" loading="lazy">
-                    <p class="mb-0 ps-2">JavaScript Algorithms and Data Structures | Free Code Camp | Online | 2025</p>
+                    <div>
+                        <p class="cert-name">JavaScript Algorithms and Data Structures</p>
+                        <p class="cert-meta">Free Code Camp <span class="cert-year">2025</span></p>
+                    </div>
                 </div>
 
-                <div class="d-flex align-items-center mb-4">
+                <div class="cert-card">
                     <img src="/img/free-code-camp.png" alt="Free Code Camp logo" class="course-img" loading="lazy">
-                    <p class="mb-0 ps-2">Responsive Web Design (HTML & CSS) | Free Code Camp | Online | 2023</p>
+                    <div>
+                        <p class="cert-name">Responsive Web Design (HTML & CSS)</p>
+                        <p class="cert-meta">Free Code Camp <span class="cert-year">2023</span></p>
+                    </div>
                 </div>
 
-                <div class="d-flex align-items-center mb-4">
+                <div class="cert-card">
                     <img src="/img/coder.png" alt="Coder House logo" class="course-img" loading="lazy">
-                    <p class="mb-0 ps-2">UX/UI Design | Coder House | Online | 2021</p>
+                    <div>
+                        <p class="cert-name">UX/UI Design</p>
+                        <p class="cert-meta">Coder House <span class="cert-year">2021</span></p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -427,15 +500,15 @@
             <div class="d-md-flex justify-content-between">
                 <a target="_blank" href="https://ailengonzalez.ar/" class="text-decoration-none color-primary"
                     rel="noopener noreferrer">
-                    <p class="contact-link pb-2"><i class="bi bi-globe pe-2"></i>ailengonzalez.ar</p>
+                    <span class="contact-link pb-2"><i class="bi bi-globe pe-2"></i>ailengonzalez.ar</span>
                 </a>
                 <a target="_blank" href="https://github.com/ailengonzalez2" class="text-decoration-none color-primary"
                     rel="noopener noreferrer">
-                    <p class="contact-link pb-2"><i class="bi bi-github pe-2"></i>github.com/ailengonzalez2</p>
+                    <span class="contact-link pb-2"><i class="bi bi-github pe-2"></i>github.com/ailengonzalez2</span>
                 </a>
                 <a target="_blank" href="https://www.linkedin.com/in/ailengonzalez/"
                     class="text-decoration-none color-primary" rel="noopener noreferrer">
-                    <p class="contact-link pb-4"><i class="bi bi-linkedin pe-2"></i>linkedin.com/in/ailengonzalez/</p>
+                    <span class="contact-link pb-4"><i class="bi bi-linkedin pe-2"></i>linkedin.com/in/ailengonzalez/</span>
                 </a>
             </div>
         </div>
