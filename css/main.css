@@ -203,6 +203,7 @@ a:hover .contact-link {
 
 .sidebar-open {
     transform: translateX(0);
+    z-index: 1002;
 }
 
 .sidebar-download {
@@ -264,28 +265,76 @@ a:hover .contact-link {
     text-align: center;
 }
 
-.sidebar-toggle {
+/* Mobile Header */
+.mobile-header {
     position: fixed;
-    bottom: 24px;
-    left: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1001;
-    width: 44px;
-    height: 44px;
-    border-radius: 12px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
     background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.mobile-header-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.mobile-header-name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.3;
+}
+
+.mobile-header-role {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--secondary-text);
+    line-height: 1.3;
+}
+
+.sidebar-toggle {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background: transparent;
     color: var(--primary-text);
-    font-size: 22px;
+    font-size: 24px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
     transition: background 0.15s ease;
 }
 
 .sidebar-toggle:hover {
-    background: rgba(0, 0, 0, 0.04);
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.sidebar-overlay.visible {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /* Project Cards */
@@ -558,7 +607,7 @@ a:hover .contact-link {
 
 @media print {
     .sidebar,
-    .sidebar-toggle {
+    .mobile-header {
         display: none;
     }
 
@@ -592,12 +641,23 @@ a:hover .contact-link {
     }
 }
 
+@media (max-width: 991px) {
+    body {
+        padding-top: 80px;
+    }
+
+    #profile h1,
+    #profile .subtitle-role {
+        display: none;
+    }
+}
+
 @media (min-width: 992px) {
     .sidebar {
         transform: translateX(0);
     }
 
-    .sidebar-toggle {
+    .mobile-header {
         display: none;
     }
 

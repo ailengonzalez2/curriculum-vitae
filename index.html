@@ -56,9 +56,17 @@
         </div>
     </nav>
 
-    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle navigation">
-        <i class="bi bi-list"></i>
-    </button>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <header class="mobile-header" id="mobileHeader">
+        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle navigation">
+            <i class="bi bi-list" id="toggleIcon"></i>
+        </button>
+        <div class="mobile-header-info">
+            <span class="mobile-header-name">Ailen Gonzalez</span>
+            <span class="mobile-header-role">Frontend Developer | Product Designer</span>
+        </div>
+    </header>
 
     <main class="margin-desktop mt-5">
 
@@ -507,17 +515,35 @@
         (function () {
             const sidebar = document.getElementById('sidebar');
             const toggle = document.getElementById('sidebarToggle');
+            const overlay = document.getElementById('sidebarOverlay');
+            const icon = document.getElementById('toggleIcon');
             const links = document.querySelectorAll('.sidebar-link');
             const sections = document.querySelectorAll('section[id], footer[id]');
 
+            function openSidebar() {
+                sidebar.classList.add('sidebar-open');
+                overlay.classList.add('visible');
+                icon.className = 'bi bi-x-lg';
+            }
+
+            function closeSidebar() {
+                sidebar.classList.remove('sidebar-open');
+                overlay.classList.remove('visible');
+                icon.className = 'bi bi-list';
+            }
+
             toggle.addEventListener('click', function () {
-                sidebar.classList.toggle('sidebar-open');
+                if (sidebar.classList.contains('sidebar-open')) {
+                    closeSidebar();
+                } else {
+                    openSidebar();
+                }
             });
 
+            overlay.addEventListener('click', closeSidebar);
+
             links.forEach(function (link) {
-                link.addEventListener('click', function () {
-                    sidebar.classList.remove('sidebar-open');
-                });
+                link.addEventListener('click', closeSidebar);
             });
 
             window.addEventListener('scroll', function () {
