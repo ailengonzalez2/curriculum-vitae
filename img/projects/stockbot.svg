@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 776" role="img" aria-label="Stock Bot automation preview">
+  <defs>
+    <linearGradient id="sg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B0F19"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="sa" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF6E63"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="776" fill="url(#sg)"/>
+
+  <!-- workflow nodes -->
+  <g stroke="url(#sa)" stroke-width="2" fill="none" opacity="0.85">
+    <line x1="220" y1="380" x2="380" y2="280"/>
+    <line x1="220" y1="380" x2="380" y2="480"/>
+    <line x1="500" y1="280" x2="660" y2="380"/>
+    <line x1="500" y1="480" x2="660" y2="380"/>
+    <line x1="780" y1="380" x2="940" y2="280"/>
+    <line x1="780" y1="380" x2="940" y2="480"/>
+  </g>
+  <g>
+    <circle cx="220" cy="380" r="34" fill="#0F172A" stroke="url(#sa)" stroke-width="2"/>
+    <circle cx="220" cy="380" r="10" fill="#FF6E63"/>
+
+    <rect x="345" y="245" width="120" height="70" rx="10" fill="#0F172A" stroke="url(#sa)" stroke-width="2"/>
+    <text x="405" y="287" font-family="Inter, sans-serif" font-size="16" font-weight="500" fill="#E2E8F0" text-anchor="middle">Fetch</text>
+
+    <rect x="345" y="445" width="120" height="70" rx="10" fill="#0F172A" stroke="url(#sa)" stroke-width="2"/>
+    <text x="405" y="487" font-family="Inter, sans-serif" font-size="16" font-weight="500" fill="#E2E8F0" text-anchor="middle">Filter</text>
+
+    <circle cx="720" cy="380" r="34" fill="#0F172A" stroke="url(#sa)" stroke-width="2"/>
+    <circle cx="720" cy="380" r="10" fill="#A855F7"/>
+
+    <rect x="905" y="245" width="120" height="70" rx="10" fill="#0F172A" stroke="url(#sa)" stroke-width="2"/>
+    <text x="965" y="287" font-family="Inter, sans-serif" font-size="16" font-weight="500" fill="#E2E8F0" text-anchor="middle">Notify</text>
+
+    <rect x="905" y="445" width="120" height="70" rx="10" fill="#0F172A" stroke="url(#sa)" stroke-width="2"/>
+    <text x="965" y="487" font-family="Inter, sans-serif" font-size="16" font-weight="500" fill="#E2E8F0" text-anchor="middle">Log</text>
+  </g>
+
+  <!-- title -->
+  <text x="80" y="100" font-family="Inter, sans-serif" font-size="14" font-weight="500" letter-spacing="6" fill="#94A3B8">// AUTOMATION</text>
+  <text x="80" y="700" font-family="Inter, sans-serif" font-weight="300" font-size="84" fill="#FFFFFF" letter-spacing="-3">Stock Bot</text>
+  <text x="84" y="740" font-family="Inter, sans-serif" font-weight="500" font-size="18" fill="#A855F7" letter-spacing="6">N8N · AI · ALERTS · 2025</text>
+</svg>

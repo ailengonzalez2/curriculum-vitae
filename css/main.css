@@ -218,16 +218,15 @@ a:hover .contact-link {
     justify-content: center;
     width: 36px;
     height: 36px;
-    border-radius: 8px;
     color: var(--secondary-text);
     text-decoration: none;
     font-size: 16px;
-    transition: background 0.15s ease, color 0.15s ease;
+    transition: color 0.15s ease, transform 0.15s ease;
 }
 
 .sidebar-social:hover {
-    background: rgba(0, 0, 0, 0.06);
     color: var(--primary-text);
+    transform: scale(1.18);
 }
 
 .sidebar-open {
