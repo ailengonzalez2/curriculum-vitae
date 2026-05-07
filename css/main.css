@@ -333,15 +333,30 @@ a:hover .contact-link {
 
 /* Project Cards */
 .project-card {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--border);
 }
 
 .project-card:last-child {
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
+}
+
+.project-info {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+@media (max-width: 640px) {
+    .project-card {
+        flex-direction: column;
+        gap: 12px;
+    }
 }
 
 .project-year {
@@ -731,6 +746,7 @@ a.contact-link-cta,
     display: flex;
     flex-wrap: wrap;
     gap: 8px 16px;
+    margin-top: 16px;
     margin-bottom: 24px;
     align-items: center;
 }
@@ -795,12 +811,20 @@ a.contact-link-cta,
 /* Project image */
 .project-image {
     display: block;
-    width: 100%;
-    aspect-ratio: 2 / 1;
+    flex: 0 0 38%;
+    width: 38%;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 16px;
+    border-radius: 10px;
     background: var(--accent-soft);
+}
+
+@media (max-width: 640px) {
+    .project-image {
+        width: 100%;
+        flex: 0 0 auto;
+        aspect-ratio: 16 / 9;
+    }
 }
 
 /* Footer */
