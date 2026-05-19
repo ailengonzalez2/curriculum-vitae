@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ailen Gonzalez | Frontend Developer & Product Designer</title>
+    <title>Ailen Gonzalez | AI Product Engineer</title>
     <meta name="description"
-        content="Product Designer & Frontend Developer with 5+ years building user-centered digital products. Specializing in Vue.js, Nuxt.js, Figma, and Web3/DeFi interfaces.">
+        content="AI Product Engineer with 5+ years building user-centered web products. I design and ship user-facing AI features end-to-end — UI, frontend, and LLM integration in Vue/Nuxt and OpenAI APIs.">
     <meta name="author" content="Ailen Gonzalez">
     <meta name="theme-color" content="#ffffff">
     <link rel="canonical" href="https://cv.ailengonzalez.ar/">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Ailen Gonzalez | Frontend Developer & Product Designer">
+    <meta property="og:title" content="Ailen Gonzalez | AI Product Engineer">
     <meta property="og:description"
-        content="Product Designer & Frontend Developer with 5+ years building user-centered digital products. Specializing in Vue.js, Nuxt.js, Figma, and Web3/DeFi interfaces.">
+        content="AI Product Engineer with 5+ years building user-centered web products. I design and ship user-facing AI features end-to-end — UI, frontend, and LLM integration in Vue/Nuxt and OpenAI APIs.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://cv.ailengonzalez.ar/">
     <meta property="og:site_name" content="Ailen Gonzalez CV">
@@ -22,15 +22,15 @@
     <meta property="og:image" content="https://cv.ailengonzalez.ar/img/og-cover.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Ailen Gonzalez — Frontend Developer & Product Designer">
+    <meta property="og:image:alt" content="Ailen Gonzalez — AI Product Engineer">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ailen Gonzalez | Frontend Developer & Product Designer">
+    <meta name="twitter:title" content="Ailen Gonzalez | AI Product Engineer">
     <meta name="twitter:description"
-        content="Product Designer & Frontend Developer with 5+ years building user-centered digital products. Specializing in Vue.js, Nuxt.js, Figma, and Web3/DeFi interfaces.">
+        content="AI Product Engineer with 5+ years building user-centered web products. I design and ship user-facing AI features end-to-end — UI, frontend, and LLM integration in Vue/Nuxt and OpenAI APIs.">
     <meta name="twitter:image" content="https://cv.ailengonzalez.ar/img/og-cover.png">
-    <meta name="twitter:image:alt" content="Ailen Gonzalez — Frontend Developer & Product Designer">
+    <meta name="twitter:image:alt" content="Ailen Gonzalez — AI Product Engineer">
 
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
@@ -45,6 +45,30 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/css/main.css">
 
+    <!-- i18n: hide inactive language to prevent FOUC + button reset to match sidebar links -->
+    <style>
+        [lang="en"] .t-es { display: none !important; }
+        [lang="es"] .t-en { display: none !important; }
+        button.sidebar-link {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            font: inherit;
+        }
+    </style>
+
+    <!-- Apply saved language before paint to avoid FOUC -->
+    <script>
+        (function () {
+            try {
+                var l = localStorage.getItem('cv-lang');
+                if (l === 'es') document.documentElement.setAttribute('lang', 'es');
+            } catch (e) { }
+        })();
+    </script>
+
     <!-- Structured data -->
     <script type="application/ld+json">
     {
@@ -53,8 +77,8 @@
       "name": "Ailen Gonzalez",
       "givenName": "Ailen",
       "familyName": "Gonzalez",
-      "jobTitle": "Frontend Developer & Product Designer",
-      "description": "Product Designer & Frontend Developer with 5+ years building user-centered digital products. Specializing in Vue.js, Nuxt.js, Figma, and Web3/DeFi interfaces.",
+      "jobTitle": "AI Product Engineer",
+      "description": "AI Product Engineer with 5+ years building user-centered web products. I design and ship user-facing AI features end-to-end — UI, frontend, and LLM integration in Vue/Nuxt and OpenAI APIs.",
       "url": "https://cv.ailengonzalez.ar/",
       "image": "https://cv.ailengonzalez.ar/img/og-cover.png",
       "address": {
@@ -73,16 +97,22 @@
         "name": "Universidad Nacional de Córdoba"
       },
       "knowsAbout": [
+        "AI Product Engineering",
+        "Large Language Models",
+        "OpenAI API",
+        "Anthropic Claude",
+        "LLM Integration",
+        "Prompt Engineering",
+        "Retrieval-Augmented Generation",
+        "n8n",
         "Vue.js",
         "Nuxt.js",
         "TypeScript",
         "JavaScript",
+        "Tailwind CSS",
         "Figma",
         "UX Design",
         "Product Design",
-        "Web3",
-        "DeFi",
-        "Tailwind CSS",
         "Frontend Development"
       ],
       "knowsLanguage": ["English", "Spanish"]
@@ -92,34 +122,58 @@
 
 <body>
 
-    <a href="#profile" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#profile" class="visually-hidden-focusable">
+        <span class="t-en">Skip to main content</span>
+        <span class="t-es">Saltar al contenido principal</span>
+    </a>
 
     <nav class="sidebar" id="sidebar" aria-label="Main navigation">
-        <a href="./Ailen Gonzalez-CV.pdf" download class="sidebar-download">
-            <i aria-hidden="true" class="bi bi-download"></i><span>Download CV</span>
+        <a href="./Ailen_Gonzalez_Frontend_Developer_CV.docx" download="Ailen_Gonzalez_Frontend_Developer_CV.docx" class="sidebar-download">
+            <i aria-hidden="true" class="bi bi-download"></i>
+            <span class="t-en">Download CV</span>
+            <span class="t-es">Descargar CV</span>
         </a>
         <div class="sidebar-nav">
             <a href="#profile" class="sidebar-link active">
-                <i aria-hidden="true" class="bi bi-person"></i><span>Profile</span>
+                <i aria-hidden="true" class="bi bi-person"></i>
+                <span class="t-en">Profile</span>
+                <span class="t-es">Perfil</span>
             </a>
             <a href="#experience" class="sidebar-link">
-                <i aria-hidden="true" class="bi bi-briefcase"></i><span>Experience</span>
+                <i aria-hidden="true" class="bi bi-briefcase"></i>
+                <span class="t-en">Experience</span>
+                <span class="t-es">Experiencia</span>
             </a>
             <a href="#skills" class="sidebar-link">
-                <i aria-hidden="true" class="bi bi-tools"></i><span>Skills</span>
+                <i aria-hidden="true" class="bi bi-tools"></i>
+                <span class="t-en">Skills</span>
+                <span class="t-es">Habilidades</span>
             </a>
             <a href="#education" class="sidebar-link">
-                <i aria-hidden="true" class="bi bi-mortarboard"></i><span>Education</span>
+                <i aria-hidden="true" class="bi bi-mortarboard"></i>
+                <span class="t-en">Education</span>
+                <span class="t-es">Educación</span>
             </a>
             <a href="#certifications" class="sidebar-link">
-                <i aria-hidden="true" class="bi bi-award"></i><span>Certifications</span>
+                <i aria-hidden="true" class="bi bi-award"></i>
+                <span class="t-en">Certifications</span>
+                <span class="t-es">Certificaciones</span>
             </a>
             <a href="#projects" class="sidebar-link">
-                <i aria-hidden="true" class="bi bi-folder"></i><span>Projects</span>
+                <i aria-hidden="true" class="bi bi-folder"></i>
+                <span class="t-en">Projects</span>
+                <span class="t-es">Proyectos</span>
             </a>
             <a href="#contact" class="sidebar-link">
-                <i aria-hidden="true" class="bi bi-envelope"></i><span>Contact</span>
+                <i aria-hidden="true" class="bi bi-envelope"></i>
+                <span class="t-en">Contact</span>
+                <span class="t-es">Contacto</span>
             </a>
+            <button id="langToggle" class="sidebar-link" type="button" aria-label="Switch language">
+                <i aria-hidden="true" class="bi bi-translate"></i>
+                <span class="t-en">Español</span>
+                <span class="t-es">English</span>
+            </button>
         </div>
 
         <div class="sidebar-socials" aria-label="Social links">
@@ -143,7 +197,10 @@
         </button>
         <div class="mobile-header-info">
             <span class="mobile-header-name">Ailen Gonzalez</span>
-            <span class="mobile-header-role">Frontend Developer | Product Designer</span>
+            <span class="mobile-header-role">
+                <span class="t-en">AI Product Engineer | Frontend · Design · LLM</span>
+                <span class="t-es">AI Product Engineer | Frontend · Diseño · LLM</span>
+            </span>
         </div>
     </header>
 
@@ -152,97 +209,173 @@
         <!-- Header & Summary -->
         <section id="profile" class="container container-custom mb-5">
             <h1>Ailen Gonzalez</h1>
-            <p class="subtitle-role mb-4">Frontend Developer &middot; Product Designer</p>
+            <p class="subtitle-role mb-4">
+                <span class="t-en">AI Product Engineer &middot; Frontend · Design</span>
+                <span class="t-es">AI Product Engineer &middot; Frontend · Diseño</span>
+            </p>
 
             <p class="contact-link mb-4"><i aria-hidden="true" class="bi bi-geo pe-2"></i>Córdoba, Argentina · GMT-3</p>
 
-            <p>
-                I'm a Product Designer and Frontend Developer with 5+ years building user-centered digital products end to end. Before design and code, I trained as a medical doctor and spent a decade in emergency medicine — that's where I learned to make decisions under pressure, listen carefully, and reduce complex situations to clear next steps. The same instincts now go into the products I ship.
+            <p class="t-en">
+                I'm an AI Product Engineer. I design and ship user-facing AI features end-to-end — UI, frontend, and LLM integration — so teams don't lose weeks to handoffs between three roles. 5+ years building product, 20+ shipped, modern stack (Vue/Nuxt, TypeScript, Tailwind, OpenAI APIs, n8n).
             </p>
-            <p>
-                I work across UX research, Figma prototyping, and scalable Vue.js / Nuxt.js development — handling the whole arc in a single workflow rather than handing off between specialists.
+            <p class="t-es">
+                Soy AI Product Engineer. Diseño y desarrollo features de IA orientadas al usuario de punta a punta — UI, frontend e integración con LLMs — para que los equipos no pierdan semanas en pases entre tres roles. 5+ años creando producto, 20+ enviados, stack moderno (Vue/Nuxt, TypeScript, Tailwind, APIs de OpenAI, n8n).
             </p>
-            <p>Core focus areas:</p>
+            <p class="t-en">Core focus areas:</p>
+            <p class="t-es">Áreas de foco principales:</p>
             <ul>
-                <li>Web3 / DeFi interfaces with wallet integrations (Wagmi, Viem, Web3Modal)</li>
-                <li>AI-powered design-to-code workflows (n8n automation, Figma AI)</li>
-                <li>Remote agile teams (Scrum / Kanban) across timezones — English C1, Spanish native</li>
+                <li class="t-en">AI-native chat interfaces — streaming, tool-call visualization, conversation memory</li>
+                <li class="t-es">Interfaces de chat nativas de IA — streaming, visualización de tool calls, memoria conversacional</li>
+                <li class="t-en">RAG-powered search and Q&amp;A over real corpora — with measurable evals</li>
+                <li class="t-es">Búsqueda y Q&amp;A con RAG sobre corpora reales — con evaluaciones medibles</li>
+                <li class="t-en">AI feature integration into existing SaaS products (summarization, generation, automation)</li>
+                <li class="t-es">Integración de features de IA en SaaS existentes (resúmenes, generación, automatización)</li>
+                <li class="t-en">Remote agile teams across timezones — English C1, Spanish native</li>
+                <li class="t-es">Equipos ágiles remotos cross-timezone — Inglés C1, Español nativo</li>
             </ul>
-            <p>
-                Delivered 20+ production-ready products for startups and agencies, reducing delivery cycles by 40–50% through dual-skill ownership. I turn complex requirements into intuitive, accessible interfaces backed by clean, maintainable code.
+            <p class="t-en">
+                At codeCave, combining design and AI automation in one workflow reduced delivery cycles by 40–50%. I turn complex requirements into intuitive, accessible interfaces backed by clean, maintainable code.
+            </p>
+            <p class="t-es">
+                En codeCave, combinar diseño y automatización con IA en un mismo flujo redujo los ciclos de entrega un 40–50%. Transformo requerimientos complejos en interfaces intuitivas y accesibles, respaldadas por código limpio y mantenible.
             </p>
         </section>
 
         <!-- Work Experience -->
         <section id="experience" class="container container-custom">
             <div>
-                <h2>Experience</h2>
+                <h2><span class="t-en">Experience</span><span class="t-es">Experiencia</span></h2>
                 <hr class="color-secondary mt-1 mb-4">
 
                 <div class="experience-card">
-                    <span class="experience-date is-current">Sep 2025 — Present · Full-time</span>
-                    <h3 class="experience-role">Product Designer</h3>
-                    <p class="experience-company">codeCave <span class="experience-location">Córdoba, Argentina (Remote)</span></p>
+                    <span class="experience-date is-current">
+                        <span class="t-en">Sep 2025 — Present · Full-time</span>
+                        <span class="t-es">Sep 2025 — Actualidad · Tiempo completo</span>
+                    </span>
+                    <h3 class="experience-role">
+                        <span class="t-en">Product Designer</span>
+                        <span class="t-es">Diseñadora de Producto</span>
+                    </h3>
+                    <p class="experience-company">codeCave <span class="experience-location">
+                        <span class="t-en">Córdoba, Argentina (Remote)</span>
+                        <span class="t-es">Córdoba, Argentina (Remoto)</span>
+                    </span></p>
                     <ul>
-                        <li>Lead design and development for company's core products, delivering high-fidelity Figma
-                            designs and production-ready code (Vue.js, Nuxt.js, TailwindCSS, WordPress).
+                        <li class="t-en">Ship AI features end-to-end (design + frontend + LLM integration) in a single-owner
+                            workflow — no handoff lag between roles.
                         </li>
-                        <li>Design and implement AI-powered automations and agents using n8n, reducing delivery time by
-                            40-50% and streamlining internal workflows.
+                        <li class="t-es">Lanzo features de IA de punta a punta (diseño + frontend + integración LLM) en un
+                            flujo único, sin demoras de pase entre roles.
                         </li>
-                        <li>Collaborate with remote teams, balancing strategic design leadership with hands-on frontend
-                            contributions (Vue.js, Nuxt, TailwindCSS).
+                        <li class="t-en">Design and implement AI-powered automations and agents using n8n + OpenAI APIs, reducing
+                            delivery time by 40–50% and streamlining internal workflows.
+                        </li>
+                        <li class="t-es">Diseño e implemento automatizaciones y agentes con IA usando n8n + APIs de OpenAI,
+                            reduciendo el tiempo de entrega en un 40–50% y optimizando flujos internos.
+                        </li>
+                        <li class="t-en">Lead design and development for core products with production-ready Vue.js, Nuxt.js, and
+                            TailwindCSS code alongside high-fidelity Figma systems.
+                        </li>
+                        <li class="t-es">Lidero diseño y desarrollo de los productos core con código production-ready en Vue.js,
+                            Nuxt.js y TailwindCSS, junto a sistemas de Figma de alta fidelidad.
                         </li>
                     </ul>
                 </div>
 
                 <div class="experience-card">
-                    <span class="experience-date is-current">Aug 2024 — Present · Concurrent / Selective projects</span>
-                    <h3 class="experience-role">UI Developer</h3>
-                    <p class="experience-company">Freelance <span class="experience-location">Córdoba, Argentina (Remote)</span></p>
+                    <span class="experience-date is-current">
+                        <span class="t-en">Aug 2024 — Present · Concurrent / Selective projects</span>
+                        <span class="t-es">Ago 2024 — Actualidad · Proyectos concurrentes / selectivos</span>
+                    </span>
+                    <h3 class="experience-role">
+                        <span class="t-en">Product Engineer</span>
+                        <span class="t-es">Product Engineer</span>
+                    </h3>
+                    <p class="experience-company">Freelance <span class="experience-location">
+                        <span class="t-en">Córdoba, Argentina (Remote)</span>
+                        <span class="t-es">Córdoba, Argentina (Remoto)</span>
+                    </span></p>
                     <ul>
-                        <li>Delivered 20+ end-to-end digital products for startups and independent clients, translating
-                            Figma designs into responsive, mobile-first code (Vue.js, Nuxt.js, TailwindCSS), across
-                            SaaS, e-commerce, and Web3/DeFi.
+                        <li class="t-en">Delivered 20+ end-to-end product engagements for startups and independent clients —
+                            design (Figma) + frontend (Vue.js, Nuxt.js, TailwindCSS) in a single workflow.
                         </li>
-                        <li>Conducted User Research and created Information Architecture for SaaS platforms, developing
-                            User Flows and Interaction Design specifications in Figma.
+                        <li class="t-es">Entregué 20+ engagements de producto de punta a punta para startups y clientes
+                            independientes — diseño (Figma) + frontend (Vue.js, Nuxt.js, TailwindCSS) en un flujo único.
                         </li>
-                        <li>Integrated Web3 wallet functionality (Wagmi, Viem) for DeFi applications, implementing
-                            smart contract interactions and blockchain state management.
+                        <li class="t-en">Currently focused on AI feature integration for SaaS — chat UIs, retrieval,
+                            summarization, and workflow automation with n8n + OpenAI APIs.
+                        </li>
+                        <li class="t-es">Actualmente enfocada en integración de features de IA para SaaS — chat UIs,
+                            recuperación, resúmenes y automatización con n8n + APIs de OpenAI.
+                        </li>
+                        <li class="t-en">Earlier work also included Web3 frontends (Wagmi, Viem, Web3Modal) for DeFi applications
+                            and Information Architecture / User Research for SaaS platforms.
+                        </li>
+                        <li class="t-es">Trabajos previos incluyeron frontends Web3 (Wagmi, Viem, Web3Modal) para apps DeFi e
+                            Investigación de Usuarios / Arquitectura de Información para plataformas SaaS.
                         </li>
                     </ul>
                 </div>
 
                 <div class="experience-card">
                     <span class="experience-date">Sep 2022 - Jul 2024</span>
-                    <h3 class="experience-role">Web Designer</h3>
-                    <p class="experience-company">Loymark S.A. <span class="experience-location">Costa Rica (Remote)</span></p>
+                    <h3 class="experience-role">
+                        <span class="t-en">Web Designer</span>
+                        <span class="t-es">Diseñadora Web</span>
+                    </h3>
+                    <p class="experience-company">Loymark S.A. <span class="experience-location">
+                        <span class="t-en">Costa Rica (Remote)</span>
+                        <span class="t-es">Costa Rica (Remoto)</span>
+                    </span></p>
                     <ul>
-                        <li>Designed and developed websites and applications using Figma, HTML, CSS, JavaScript, and
+                        <li class="t-en">Designed and developed websites and applications using Figma, HTML, CSS, JavaScript, and
                             Bootstrap, delivering many concurrent projects on average.
                         </li>
-                        <li>Collaborated with international teams to deliver responsive digital solutions for
+                        <li class="t-es">Diseñé y desarrollé sitios web y aplicaciones usando Figma, HTML, CSS, JavaScript y
+                            Bootstrap, entregando varios proyectos en paralelo en promedio.
+                        </li>
+                        <li class="t-en">Collaborated with international teams to deliver responsive digital solutions for
                             high-profile clients across America.
                         </li>
-                        <li>Conducted ongoing UI testing, usability checks, and design reviews to ensure consistency,
+                        <li class="t-es">Colaboré con equipos internacionales para entregar soluciones digitales responsive a
+                            clientes destacados en toda América.
+                        </li>
+                        <li class="t-en">Conducted ongoing UI testing, usability checks, and design reviews to ensure consistency,
                             accessibility compliance (WCAG standards), and a high-quality user experience.
+                        </li>
+                        <li class="t-es">Realicé testing de UI, checks de usabilidad y revisiones de diseño continuas para
+                            garantizar consistencia, cumplimiento de accesibilidad (WCAG) y una experiencia de usuario de alta calidad.
                         </li>
                     </ul>
                 </div>
 
                 <div class="experience-card">
                     <span class="experience-date">Feb 2021 - Sep 2022</span>
-                    <h3 class="experience-role">Web Developer</h3>
-                    <p class="experience-company">CodeCave <span class="experience-location">Córdoba, Argentina (Remote)</span></p>
+                    <h3 class="experience-role">
+                        <span class="t-en">Web Developer</span>
+                        <span class="t-es">Desarrolladora Web</span>
+                    </h3>
+                    <p class="experience-company">CodeCave <span class="experience-location">
+                        <span class="t-en">Córdoba, Argentina (Remote)</span>
+                        <span class="t-es">Córdoba, Argentina (Remoto)</span>
+                    </span></p>
                     <ul>
-                        <li>Built e-commerce platforms and corporate websites using WordPress, WooCommerce, and
+                        <li class="t-en">Built e-commerce platforms and corporate websites using WordPress, WooCommerce, and
                             Elementor.
                         </li>
-                        <li>Delivered custom features and styling to enhance performance and visual appeal.
+                        <li class="t-es">Construí plataformas e-commerce y sitios corporativos usando WordPress, WooCommerce y
+                            Elementor.
                         </li>
-                        <li>Managed ongoing maintenance, security updates, and content optimization to ensure stable,
+                        <li class="t-en">Delivered custom features and styling to enhance performance and visual appeal.
+                        </li>
+                        <li class="t-es">Entregué features y estilos custom para mejorar la performance y el atractivo visual.
+                        </li>
+                        <li class="t-en">Managed ongoing maintenance, security updates, and content optimization to ensure stable,
                             high-performing web environments.
+                        </li>
+                        <li class="t-es">Gestioné mantenimiento, actualizaciones de seguridad y optimización de contenido para
+                            garantizar entornos web estables y de alto rendimiento.
                         </li>
                     </ul>
                 </div>
@@ -252,10 +385,33 @@
         <!-- Skills -->
         <section id="skills" class="container container-custom mb-5">
             <div>
-                <h2>Skills</h2>
+                <h2><span class="t-en">Skills</span><span class="t-es">Habilidades</span></h2>
                 <hr class="color-secondary mt-1 mb-4">
 
-                <h4 class="skill-category skill-category-primary">Frontend Development</h4>
+                <h4 class="skill-category skill-category-primary">
+                    <span class="t-en">AI &amp; LLM</span>
+                    <span class="t-es">IA &amp; LLM</span>
+                </h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">OpenAI APIs</span>
+                    <span class="skill-tag">Anthropic Claude</span>
+                    <span class="skill-tag">LLM Integrations</span>
+                    <span class="skill-tag">Prompt Design</span>
+                    <span class="skill-tag">Streaming Responses</span>
+                    <span class="skill-tag">Tool Calling</span>
+                    <span class="skill-tag">RAG</span>
+                    <span class="skill-tag">Embeddings</span>
+                    <span class="skill-tag">n8n</span>
+                    <span class="skill-tag">Workflow Automation</span>
+                    <span class="skill-tag">AI Prototyping</span>
+                    <span class="skill-tag">Figma AI</span>
+                    <span class="skill-tag">UX Pilot</span>
+                </div>
+
+                <h4 class="skill-category skill-category-primary">
+                    <span class="t-en">Frontend Development</span>
+                    <span class="t-es">Desarrollo Frontend</span>
+                </h4>
                 <div class="skill-tags">
                     <span class="skill-tag">Vue.js</span>
                     <span class="skill-tag">Nuxt.js</span>
@@ -271,7 +427,10 @@
                     <span class="skill-tag">Performance Optimization</span>
                 </div>
 
-                <h4 class="skill-category skill-category-primary">Design &amp; UX</h4>
+                <h4 class="skill-category skill-category-primary">
+                    <span class="t-en">Design &amp; UX</span>
+                    <span class="t-es">Diseño &amp; UX</span>
+                </h4>
                 <div class="skill-tags">
                     <span class="skill-tag">Figma</span>
                     <span class="skill-tag">Adobe Creative Suite</span>
@@ -289,25 +448,6 @@
                 </div>
 
                 <div class="skill-grid">
-                    <div class="skill-group">
-                        <span class="skill-group-label">Web3</span>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Wagmi</span>
-                            <span class="skill-tag">Viem</span>
-                            <span class="skill-tag">Web3Modal</span>
-                            <span class="skill-tag">DeFi Integrations</span>
-                        </div>
-                    </div>
-                    <div class="skill-group">
-                        <span class="skill-group-label">AI &amp; Automation</span>
-                        <div class="skill-tags">
-                            <span class="skill-tag">n8n</span>
-                            <span class="skill-tag">LLM Integrations</span>
-                            <span class="skill-tag">OpenAI APIs</span>
-                            <span class="skill-tag">UX Pilot</span>
-                            <span class="skill-tag">Figma AI</span>
-                        </div>
-                    </div>
                     <div class="skill-group">
                         <span class="skill-group-label">Build &amp; Tooling</span>
                         <div class="skill-tags">
@@ -333,7 +473,19 @@
                         </div>
                     </div>
                     <div class="skill-group">
-                        <span class="skill-group-label">CMS &amp; Platforms</span>
+                        <span class="skill-group-label">Web3</span>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Wagmi</span>
+                            <span class="skill-tag">Viem</span>
+                            <span class="skill-tag">Web3Modal</span>
+                            <span class="skill-tag">DeFi Integrations</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <span class="skill-group-label">
+                            <span class="t-en">CMS &amp; Platforms</span>
+                            <span class="t-es">CMS &amp; Plataformas</span>
+                        </span>
                         <div class="skill-tags">
                             <span class="skill-tag">WordPress</span>
                             <span class="skill-tag">Elementor</span>
@@ -343,7 +495,10 @@
                         </div>
                     </div>
                     <div class="skill-group">
-                        <span class="skill-group-label">Collaboration</span>
+                        <span class="skill-group-label">
+                            <span class="t-en">Collaboration</span>
+                            <span class="t-es">Colaboración</span>
+                        </span>
                         <div class="skill-tags">
                             <span class="skill-tag">Agile / Scrum</span>
                             <span class="skill-tag">Jira</span>
@@ -356,12 +511,20 @@
 
                 <div class="skill-footer">
                     <div class="skill-footer-item">
-                        <span class="skill-group-label">Languages</span>
-                        <p>English (C1) &middot; Español (Native)</p>
+                        <span class="skill-group-label">
+                            <span class="t-en">Languages</span>
+                            <span class="t-es">Idiomas</span>
+                        </span>
+                        <p class="t-en">English (C1) &middot; Español (Native)</p>
+                        <p class="t-es">Inglés (C1) &middot; Español (Nativo)</p>
                     </div>
                     <div class="skill-footer-item">
-                        <span class="skill-group-label">Soft Skills</span>
-                        <p>Autonomous work, clear communication, adaptability, analytical problem-solving, attention to detail.</p>
+                        <span class="skill-group-label">
+                            <span class="t-en">Soft Skills</span>
+                            <span class="t-es">Habilidades blandas</span>
+                        </span>
+                        <p class="t-en">Autonomous work, clear communication, adaptability, analytical problem-solving, attention to detail.</p>
+                        <p class="t-es">Trabajo autónomo, comunicación clara, adaptabilidad, resolución analítica de problemas, atención al detalle.</p>
                     </div>
                 </div>
             </div>
@@ -370,7 +533,7 @@
         <!-- Education -->
         <section id="education" class="container container-custom">
             <div class="my-5">
-                <h2>Education</h2>
+                <h2><span class="t-en">Education</span><span class="t-es">Educación</span></h2>
                 <hr class="color-secondary mt-1 mb-4">
 
                 <div class="education-card">
@@ -378,26 +541,33 @@
                         <img src="/img/unc.png" alt="Universidad Nacional de Córdoba logo" class="course-img" loading="lazy">
                         <div>
                             <span class="education-year">2017</span>
-                            <h3 class="education-title">Medical Degree</h3>
+                            <h3 class="education-title">
+                                <span class="t-en">Medical Degree</span>
+                                <span class="t-es">Médica</span>
+                            </h3>
                             <p class="education-institution">Universidad Nacional de Córdoba, Argentina</p>
                         </div>
                     </div>
-                    <ul>
-                        <li>Practiced emergency medicine (2011-2021)</li>
-                        <li>Analytical problem-solving, critical thinking, and performance under pressure</li>
-                    </ul>
                 </div>
 
                 <div class="education-card">
                     <div class="education-header">
                         <img src="/img/self-taught.svg" alt="Self-taught developer badge" class="course-img" loading="lazy">
                         <div>
-                            <span class="education-year">2019 - Present</span>
-                            <h3 class="education-title">Self-Taught Frontend Developer & Designer</h3>
+                            <span class="education-year">
+                                <span class="t-en">2019 - Present</span>
+                                <span class="t-es">2019 - Actualidad</span>
+                            </span>
+                            <h3 class="education-title">
+                                <span class="t-en">Self-Taught Frontend Developer &amp; Designer</span>
+                                <span class="t-es">Frontend Developer y Diseñadora autodidacta</span>
+                            </h3>
                         </div>
                     </div>
                     <ul>
-                        <li>Completed 1000+ hours of structured online education (Free Code Camp,
+                        <li class="t-en">Completed 1000+ hours of structured online education (Free Code Camp,
+                            Coursera, Vue Mastery, Memorisly)</li>
+                        <li class="t-es">Completé 1000+ horas de educación online estructurada (Free Code Camp,
                             Coursera, Vue Mastery, Memorisly)</li>
                     </ul>
                 </div>
@@ -407,22 +577,25 @@
         <!-- Certifications -->
         <section id="certifications" class="container container-custom">
             <div class="my-5">
-                <h2>Certifications</h2>
+                <h2><span class="t-en">Certifications</span><span class="t-es">Certificaciones</span></h2>
                 <hr class="color-secondary mt-1 mb-4">
-
-                <div class="cert-card">
-                    <img src="/img/vue.png" alt="Vue Mastery logo" class="course-img" loading="lazy">
-                    <div>
-                        <p class="cert-name">Vue Mastery</p>
-                        <p class="cert-meta">Vue Mastery <span class="cert-year">Ongoing</span></p>
-                    </div>
-                </div>
 
                 <div class="cert-card">
                     <img src="/img/memorisly.png" alt="Memorisely logo" class="course-img" loading="lazy">
                     <div>
                         <p class="cert-name">AI Prototyping</p>
                         <p class="cert-meta">Memorisely <span class="cert-year">2025</span></p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <img src="/img/vue.png" alt="Vue Mastery logo" class="course-img" loading="lazy">
+                    <div>
+                        <p class="cert-name">Vue Mastery</p>
+                        <p class="cert-meta">Vue Mastery <span class="cert-year">
+                            <span class="t-en">Ongoing</span>
+                            <span class="t-es">En curso</span>
+                        </span></p>
                     </div>
                 </div>
 
@@ -437,7 +610,7 @@
                 <div class="cert-card">
                     <img src="/img/free-code-camp.png" alt="Free Code Camp logo" class="course-img" loading="lazy">
                     <div>
-                        <p class="cert-name">Responsive Web Design (HTML & CSS)</p>
+                        <p class="cert-name">Responsive Web Design (HTML &amp; CSS)</p>
                         <p class="cert-meta">Free Code Camp <span class="cert-year">2023</span></p>
                     </div>
                 </div>
@@ -454,17 +627,23 @@
 
         <!-- Featured Projects -->
         <section id="projects" class="container container-custom mb-5">
-            <h2>Featured projects</h2>
+            <h2><span class="t-en">Featured projects</span><span class="t-es">Proyectos destacados</span></h2>
             <hr class="color-secondary mt-1 mb-4">
 
             <div class="project-card">
                 <img src="/img/projects/codecave.png" alt="codeCave studio website preview" class="project-image" loading="lazy">
                 <div class="project-info">
                     <span class="project-year">2026</span>
-                    <h3 class="project-title">codeCave <span class="project-category">Studio Website</span></h3>
-                    <p class="project-description">Full design and development of codeCave's flagship site —
+                    <h3 class="project-title">codeCave <span class="project-category">
+                        <span class="t-en">Studio Website</span>
+                        <span class="t-es">Sitio del Estudio</span>
+                    </span></h3>
+                    <p class="project-description t-en">Full design and development of codeCave's flagship site —
                         a terminal-inspired identity for a Córdoba-based product studio shipping AI, Web3, and
                         web products end to end.</p>
+                    <p class="project-description t-es">Diseño y desarrollo completos del sitio insignia de codeCave —
+                        una identidad inspirada en terminal para un estudio de producto en Córdoba que entrega
+                        productos de IA, Web3 y web de punta a punta.</p>
                     <div class="project-tags">
                         <span class="project-tag">Figma</span>
                         <span class="project-tag">Vue.js</span>
@@ -473,12 +652,18 @@
                         <span class="project-tag">Tailwind CSS</span>
                     </div>
                     <ul class="project-features">
-                        <li>Terminal-inspired visual identity</li>
-                        <li>Modular content blocks for case studies</li>
-                        <li>Performance-optimized Nuxt build</li>
+                        <li class="t-en">Terminal-inspired visual identity</li>
+                        <li class="t-es">Identidad visual inspirada en terminal</li>
+                        <li class="t-en">Modular content blocks for case studies</li>
+                        <li class="t-es">Bloques de contenido modulares para case studies</li>
+                        <li class="t-en">Performance-optimized Nuxt build</li>
+                        <li class="t-es">Build de Nuxt optimizado para performance</li>
                     </ul>
-                    <a href="https://codecave.ar/" class="project-link" target="_blank"
-                        rel="noopener noreferrer">View project <i aria-hidden="true" class="bi bi-arrow-right"></i></a>
+                    <a href="https://codecave.ar/" class="project-link" target="_blank" rel="noopener noreferrer">
+                        <span class="t-en">View project</span>
+                        <span class="t-es">Ver proyecto</span>
+                        <i aria-hidden="true" class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
             </div>
 
@@ -486,10 +671,16 @@
                 <img src="/img/projects/stockbot.svg" alt="Stock Bot automation workflow preview" class="project-image" loading="lazy">
                 <div class="project-info">
                     <span class="project-year">2026</span>
-                    <h3 class="project-title">Stock Bot <span class="project-category">AI Automation Workflow</span></h3>
-                    <p class="project-description">n8n-powered automation that monitors stock data, applies AI-driven
+                    <h3 class="project-title">Stock Bot <span class="project-category">
+                        <span class="t-en">AI Automation Workflow</span>
+                        <span class="t-es">Workflow de Automatización con IA</span>
+                    </span></h3>
+                    <p class="project-description t-en">n8n-powered automation that monitors stock data, applies AI-driven
                         filtering, and pushes timely alerts — turning a manual workflow into a hands-off
                         background process.</p>
+                    <p class="project-description t-es">Automatización con n8n que monitorea datos de stock, aplica
+                        filtrado con IA y envía alertas oportunas — convirtiendo un flujo manual en un proceso en
+                        segundo plano sin intervención.</p>
                     <div class="project-tags">
                         <span class="project-tag">n8n</span>
                         <span class="project-tag">OpenAI API</span>
@@ -497,9 +688,12 @@
                         <span class="project-tag">Webhooks</span>
                     </div>
                     <ul class="project-features">
-                        <li>Scheduled data fetching &amp; filtering</li>
-                        <li>LLM-driven decision logic</li>
-                        <li>Multi-channel alerts (Telegram / email)</li>
+                        <li class="t-en">Scheduled data fetching &amp; filtering</li>
+                        <li class="t-es">Fetching y filtrado de datos programado</li>
+                        <li class="t-en">LLM-driven decision logic</li>
+                        <li class="t-es">Lógica de decisión impulsada por LLM</li>
+                        <li class="t-en">Multi-channel alerts (Telegram / email)</li>
+                        <li class="t-es">Alertas multi-canal (Telegram / email)</li>
                     </ul>
                 </div>
             </div>
@@ -509,22 +703,31 @@
                 <div class="project-info">
                     <span class="project-year">2025</span>
                     <h3 class="project-title">Pureskyn <span class="project-category">E-commerce</span></h3>
-                    <p class="project-description">Modern skincare e-commerce platform exploring conversion-focused UX best
+                    <p class="project-description t-en">Modern skincare e-commerce platform exploring conversion-focused UX best
                         practices and AI-powered design workflows. A complete user journey from product discovery to checkout
                         optimization.</p>
+                    <p class="project-description t-es">Plataforma moderna de e-commerce de skincare explorando best practices
+                        de UX enfocadas en conversión y flujos de diseño con IA. Un recorrido completo del usuario desde
+                        el descubrimiento del producto hasta la optimización del checkout.</p>
                     <div class="project-tags">
                         <span class="project-tag">Figma</span>
                         <span class="project-tag">Figma AI</span>
                         <span class="project-tag">Adobe Creative Suite</span>
                     </div>
                     <ul class="project-features">
-                        <li>AI-generated product imagery</li>
-                        <li>Strategic CTA placement</li>
-                        <li>Mobile-optimized checkout flow</li>
+                        <li class="t-en">AI-generated product imagery</li>
+                        <li class="t-es">Imágenes de producto generadas con IA</li>
+                        <li class="t-en">Strategic CTA placement</li>
+                        <li class="t-es">Ubicación estratégica de CTAs</li>
+                        <li class="t-en">Mobile-optimized checkout flow</li>
+                        <li class="t-es">Flujo de checkout optimizado para mobile</li>
                     </ul>
                     <a href="https://www.figma.com/design/F3he0m70Gyvawvr5xwypT7/Pureskin?node-id=312-779&t=DTrRv4Uv67eU5sDh-1"
-                        class="project-link" target="_blank" rel="noopener noreferrer">View project <i aria-hidden="true"
-                            class="bi bi-arrow-right"></i></a>
+                        class="project-link" target="_blank" rel="noopener noreferrer">
+                        <span class="t-en">View project</span>
+                        <span class="t-es">Ver proyecto</span>
+                        <i aria-hidden="true" class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
             </div>
 
@@ -532,10 +735,16 @@
                 <img src="/img/projects/yogaapp.png" alt="YogaApp mobile wellness application preview" class="project-image" loading="lazy">
                 <div class="project-info">
                     <span class="project-year">2023</span>
-                    <h3 class="project-title">YogaApp <span class="project-category">Mobile Wellness Application</span></h3>
-                    <p class="project-description">Yoga and wellness mobile app designed in Figma with intuitive
+                    <h3 class="project-title">YogaApp <span class="project-category">
+                        <span class="t-en">Mobile Wellness Application</span>
+                        <span class="t-es">Aplicación Mobile de Wellness</span>
+                    </span></h3>
+                    <p class="project-description t-en">Yoga and wellness mobile app designed in Figma with intuitive
                         navigation and a personalized user experience. Complete design system with 40+ components
                         and user flow documentation.</p>
+                    <p class="project-description t-es">App mobile de yoga y wellness diseñada en Figma con navegación
+                        intuitiva y una experiencia personalizada. Sistema de diseño completo con 40+ componentes
+                        y documentación de user flows.</p>
                     <div class="project-tags">
                         <span class="project-tag">Figma</span>
                         <span class="project-tag">Design Systems</span>
@@ -543,13 +752,19 @@
                         <span class="project-tag">User Research</span>
                     </div>
                     <ul class="project-features">
-                        <li>Video class library with filtering by level</li>
-                        <li>In-app booking system</li>
-                        <li>Progress tracking &amp; recommendations</li>
+                        <li class="t-en">Video class library with filtering by level</li>
+                        <li class="t-es">Biblioteca de clases en video con filtrado por nivel</li>
+                        <li class="t-en">In-app booking system</li>
+                        <li class="t-es">Sistema de reservas in-app</li>
+                        <li class="t-en">Progress tracking &amp; recommendations</li>
+                        <li class="t-es">Seguimiento de progreso y recomendaciones</li>
                     </ul>
                     <a href="https://www.figma.com/design/S9bBTE8qAVUH2sYBgSAO0y/Yogapp?node-id=0-1&t=fO6KR2FcoV6QDKYH-1"
-                        class="project-link" target="_blank" rel="noopener noreferrer">View project <i aria-hidden="true"
-                            class="bi bi-arrow-right"></i></a>
+                        class="project-link" target="_blank" rel="noopener noreferrer">
+                        <span class="t-en">View project</span>
+                        <span class="t-es">Ver proyecto</span>
+                        <i aria-hidden="true" class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </section>
@@ -559,10 +774,13 @@
     <footer id="contact" class="margin-desktop">
         <div class="container container-custom">
             <div class="footer-meta">
-                <span>&copy; 2026 Ailen Gonzalez &middot; Last updated May 2026</span>
+                <span class="t-en">&copy; 2026 Ailen Gonzalez &middot; Last updated May 2026</span>
+                <span class="t-es">&copy; 2026 Ailen Gonzalez &middot; Última actualización Mayo 2026</span>
                 <span>
                     <a target="_blank" href="https://github.com/ailengonzalez2/curriculum-vitae" rel="noopener noreferrer">
-                        <i aria-hidden="true" class="bi bi-github pe-1"></i>View source
+                        <i aria-hidden="true" class="bi bi-github pe-1"></i>
+                        <span class="t-en">View source</span>
+                        <span class="t-es">Ver código</span>
                     </a>
                 </span>
             </div>
@@ -581,6 +799,8 @@
             const icon = document.getElementById('toggleIcon');
             const links = document.querySelectorAll('.sidebar-link');
             const sections = document.querySelectorAll('section[id], footer[id]');
+            const langToggle = document.getElementById('langToggle');
+            const htmlEl = document.documentElement;
 
             function openSidebar() {
                 sidebar.classList.add('sidebar-open');
@@ -617,6 +837,12 @@
                 links.forEach(function (link) {
                     link.classList.toggle('active', link.getAttribute('href') === '#' + current);
                 });
+            });
+
+            langToggle.addEventListener('click', function () {
+                var newLang = htmlEl.getAttribute('lang') === 'en' ? 'es' : 'en';
+                htmlEl.setAttribute('lang', newLang);
+                try { localStorage.setItem('cv-lang', newLang); } catch (e) { }
             });
         })();
     </script>
